@@ -1,0 +1,460 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+  .container {
+    width: 1100px;
+    margin: 0 auto;
+  }
+  header {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    background-color: #b3aecd;
+    right: 0;
+    transition: all 0.5s;
+    z-index: 997;
+  }
+  header a {
+    color: inherit;
+  }
+  .nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 15px;
+  }
+  
+  .nav-bar > ul {
+    display: flex;
+    gap: 30px;
+    color: #222;
+    font-weight: 400;
+    font-size: 12px;
+  }
+  .nav-bar > ul > li:hover > a {
+    color: orangered;
+  }
+  .active a {
+    color: orangered;
+  }
+  .has-dropdown {
+    position: relative;
+  }
+  .dropdown {
+    position: absolute;
+    top: 30px;
+    display: flex;
+    background-color: #fff;
+    flex-direction: column;
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s;
+  }
+  .dropdown li {
+    font-size: 15px;
+    padding: 20px 80px 10px 20px;
+  }
+  .dropdown li:hover a {
+    color: orangered;
+  }
+  .has-dropdown:hover .dropdown {
+    visibility: visible;
+    opacity: 1;
+  }
+  .banner {
+    background-image: url(https://preview.colorlib.com/theme/restaurant/img/header-bg.jpg.webp);
+    background-position: right;
+    background-size: cover;
+    height: 750px;
+  }
+  
+  .banner__info {
+    height: 754px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    color: #fff;
+  }
+  .banner__info h5 {
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 3px;
+  }
+  .banner__info h1 {
+    font-size: 75px;
+    font-weight: 900;
+    letter-spacing: 3px;
+  }
+  .banner__info button {
+    cursor: pointer;
+    width: 40%;
+    padding: 10px;
+    background-color: #f42f2c;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    color: #fff;
+  }
+  .banner__info button:hover {
+    background-color: transparent;
+    border: 1px solid;
+    transition: 0.5s;
+  }
+  .dishes {
+    margin: 100px 0;
+  }
+  .dishes-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .dishes-info h1 {
+    font-size: 40px;
+  }
+  .dishes-info p {
+    color: rgb(116, 128, 138);
+  }
+  .dishes-cards {
+    margin-top: 80px;
+    display: flex;
+    gap: 30px;
+  }
+  .dishes-details {
+    padding-top: 20px;
+  }
+  .dishes-details p {
+    padding-top: 20px;
+    color: rgb(116, 128, 138);
+  }
+  .dishes-card:hover img {
+    transition: 0.5s;
+    transform: rotate(10deg) scale(1.2);
+  }
+  .dishes-img {
+    overflow: hidden;
+  }
+  .dishes-card:hover h3 {
+    color: #f42f2c;
+  }
+  .banner2 {
+    background-image: url(https://preview.colorlib.com/theme/restaurant/img/video-bg.jpg.webp);
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+  }
+  .banner2-info {
+    height: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .foods {
+    margin: 100px;
+  }
+  .food-cards {
+    display: flex;
+    margin-bottom: 200px;
+    padding-bottom: 100px;
+    border-bottom: 1px solid #eee;
+  }
+  .food-card h3 {
+    padding-top: 20px;
+  }
+  .food-card p {
+    padding-top: 20px;
+    color: rgb(116, 128, 138);
+  }
+  .menu {
+    margin: 100px o;
+  }
+  .menu-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+  .menu-info h1 {
+    font-size: 40px;
+  }
+  .menu-info p {
+    color: rgb(116, 128, 138);
+  }
+  .food-menu {
+    display: flex;
+    gap: 20px;
+    padding-top: 50px;
+  }
+  .fresh-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+  }
+  .fresh-info p {
+    color: rgb(116, 128, 138);
+  }
+  .fresh-info button {
+    cursor: pointer;
+    width: 40%;
+    padding: 10px;
+    background-color: #f42f2c;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    color: #fff;
+  }
+  .fresh-info button:hover {
+    background-color: white;
+    color: red;
+    border: 1px solid red;
+  }
+  .food-menu {
+    display: flex;
+  }
+  .menu-icon {
+    background-color: #fff;
+    box-shadow: -14.142px 14.142px 20px 0px rgba(157, 157, 157, 0.2);
+    padding: 14px;
+    color: #000;
+    font-weight: 500;
+    border: 1px solid #f5f5f5;
+    display: inline-flex;
+    height: 50px;
+    color: rgb(116, 128, 138);
+  }
+  .menu-icon i {
+    color: #8b7a7a;
+  }
+  .arrow-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+  }
+  .bg-color {
+    background-color: #f9f9ff;
+    height: 745px;
+    margin-top: 100px;
+  }
+  .chefs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-top: 100px;
+  }
+  .chefs-cards {
+    margin-top: 50px;
+    display: flex;
+    gap: 25px;
+  }
+  .chefs-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+  .chefs-card .img img {
+    width: 100%;
+    display: block;
+  }
+  .chefs-card .img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #e31a1795;
+    visibility: hidden;
+    z-index: 1;
+  }
+  .chefs-card .img:hover .social-media {
+    visibility: visible;
+    opacity: 1;
+    font-size: 20px;
+    color: #f42f2c;
+  }
+  .social-media {
+    position: absolute;
+    bottom: 20px;
+    left: 35%;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+  }
+  .social-media i {
+    color: #000;
+    font-size: 25px;
+  }
+  .chefs-card .img:hover::before {
+    opacity: 0.7;
+    visibility: visible;
+  }
+  .chefs-card .img {
+    position: relative;
+    z-index: 0;
+  }
+  .blog {
+    margin: 100px 0;
+  }
+  .our-blog {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+  }
+  .our-blog h1 {
+    font-size: 40px;
+  }
+  .our-blog p {
+    color: rgb(116, 128, 138);
+  }
+  .blog-cards {
+    padding-top: 100px;
+    display: flex;
+    gap: 30px;
+  }
+  .blog-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    cursor: pointer;
+  }
+  .blog-card-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .blog-card-detail span {
+    background-color: black;
+    color: #c4c0c0;
+    font-weight: 100;
+    text-align: center;
+    width: 50%;
+    padding: 5px;
+  }
+  .blog-card-detail p {
+    color: rgb(116, 128, 138);
+  }
+  .blog-card-detail a {
+    color: #222;
+    font-size: 25px;
+    font-weight: 900;
+  }
+  .blog-card:hover .blog-card-detail a {
+    color: #f42f2c;
+  }
+  .blog-card:hover .img img {
+    transition: 0.5s;
+    transform: scale(1.2);
+  }
+  .blog-card .img {
+    overflow: hidden;
+  }
+  .common {
+    display: flex;
+    justify-content: space-between;
+    color: rgb(116, 128, 138);
+  }
+  
+  .footer-bg {
+    background-color: #222222;
+    width: 100%;
+    height: 500px;
+  }
+  .footer-info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+  .copyright {
+    padding-top: 70px;
+    color: #777777;
+  }
+  footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 150px;
+  }
+  .about-us {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .about-us h3 {
+    color: white;
+  }
+  .contact-us h3 {
+    color: white;
+  }
+  .about-us p {
+    color: #777777;
+  }
+  .contact-us p {
+    color: #777777;
+  }
+  .contact-us {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: #777777;
+  }
+  .contact-us a {
+    color: #f42f2c;
+  }
+  .copyright a {
+    color: #f42f2c;
+  }
+  
+  .newsletter h3 {
+    color: #f9f9ff;
+  }
+  .newsletter p {
+    color: #777777;
+  }
+  .newsletter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .left-bottom-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+  }
+  .left-bottom-footer a:hover {
+    background-color: #f42f2c;
+  }
+  .left-bottom-footer a {
+    padding: 15px;
+    color: #f9f9ff;
+    background-color: #000;
+    transition: 0.5s;
+  }
+  .newsletter-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .newsletter-footer input {
+    width: 70%;
+    outline: none;
+    padding: 10px;
+    border-radius: 25px;
+  }
+  
